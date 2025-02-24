@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes maximum-scale=0.5">
+        <title>Mooby</title>
+        <link rel="stylesheet" href="./main2.css">
+        <style>
+            li {
+                width: 100%;
+                list-style-type: none;
+            }
+
+            li img {
+                width: 100%;
+            }
+
+            @media screen and (min-width: 1366px) {
+                li {
+                    max-width: 33%;
+                    float: left;
+                }
+            }       
+
+            @media screen and (orientation: portrait) and (max-width: 640px) {
+                body {
+                    background-color: red;
+                }
+            }
+
+            @media print {
+                h3 {
+                    color: red;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Mooby.io</h1>
+        <div></div>
+
+        <ul>
+            <li>
+                <img src="https://i.seadn.io/s/raw/files/fcdacafec6abf8db49d965c7826cdd90.jpg?w=500&auto=format">
+                <h3> Mooby Community Pass</h3>
+            </li>
+            <li>
+                <img src="https://i.seadn.io/s/raw/files/fcdacafec6abf8db49d965c7826cdd90.jpg?w=500&auto=format">
+                <h3> Mooby Community Pass</h3>
+            </li>
+            <li>
+                <img src="https://i.seadn.io/s/raw/files/fcdacafec6abf8db49d965c7826cdd90.jpg?w=500&auto=format">
+                <h3> Mooby Community Pass</h3>
+            </li>
+        </ul>
+
+        <picture>
+            <source media="(max-width: 1024px)" srcset="https://i.seadn.io/gcs/files/0d7a758337cebb9fe297ea60f34ce237.jpg?w=500&auto=format" />
+            <source media="(min-width: 1280px)" srcset="https://i.seadn.io/gcs/files/629970f704619e645bf374eca834bd86.jpg?w=500&auto=format" />
+            <img src="https://i.seadn.io/s/raw/files/fcdacafec6abf8db49d965c7826cdd90.jpg?w=500&auto=format" >
+        </picture>
+        
+    </body>
+</html>
